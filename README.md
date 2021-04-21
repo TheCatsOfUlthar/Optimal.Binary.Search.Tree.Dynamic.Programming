@@ -1,12 +1,18 @@
 # OptimalBinarySearchTree
 
+## Intro
+
+Imagine that you own a roadside store.
+
+There are items that you sell very frequently and items that you sell maybe not so frequently, and each of these items has a cost. As a business owner, you want to keep the most expensive frequently sold items near the front of the shop so customers can access them. Less expensive and frequently bought items should be in the back room for the occasional customer who needs to buy them. How do we achieve an optimal business model based on this problem in which you make the most profit?
+
 ## Performance
 
-The performance of the Optimal Binary Search Tree algorithm is O(n^3).
-
-This may not be evident at first; however, once the size of n increases to 10,000 or so, the amount of time it would take to compute the OBST would become extremely large. Given my current computer setup, I was only able to run up to n=5000. 5000^3 = 1.25E+11 which is not very close to the time it took my program which was 248,738 milliseconds. The reason for this is because O(n^3) is the worst-case time complexity, so it may not have taken my computer worst case time.
-
-In fact, the time taken for my program to run for 5000 keys was only 0.0002% the amount of time needed if 5000 ran for O(n^2). Perhaps there is something that is not not right with my program. Overall, one can still see how fast the values grow if the spreadsheet that I attached in this repository is looked at.
+* Implemented an optimal binary search tree algorithm from scratch using dynammic programming.
+* Tree supports successful and unsuccessful searches by using dummy nodes such that each dummy node represents the equivalence class {x | d_(n-1) < x < d_(n)}.
+* Tabular method is used to record solutions to each optimal sub-strucure along the way to global optimum.
+* Nodes in the OBST are classified by level depending on their key (value) and frequency of occurrence.
+* Tree is generated using the root matrix and an algorithm which finds the optimal tree based on the optimal sub-structure path within the root matrix.
 
 ## Design
 
