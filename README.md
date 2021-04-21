@@ -2,7 +2,7 @@
 
 ## Performance
 
-The performance of the Optimal Binary Search Tree algorithm is O(n^3), which is it's worst case time-complexity.
+The performance of the Optimal Binary Search Tree algorithm is O(n^3).
 
 This may not be evident at first; however, once the size of n increases to 10,000 or so, the amount of time it would take to compute the OBST would become extremely large. Given my current computer setup, I was only able to run up to n=5000. 5000^3 = 1.25E+11 which is not very close to the time it took my program which was 248,738 milliseconds. The reason for this is because O(n^3) is the worst-case time complexity, so it may not have taken my computer worst case time.
 
